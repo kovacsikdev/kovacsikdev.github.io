@@ -1,0 +1,250 @@
+:root {
+  --width: 800px;
+  --font-extra-large: 24px;
+  --font-large: 20px;
+  --font-small: 16px;
+  --skills-modal-height: 500px;
+  --skills-modal-transition-time: 0.5s;
+  --bg-img-height: 300px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: var(--font-large);
+  font-family: Helvetica, Georgia, Times, "Times New Roman", sans-serif;
+  color: white;
+  background-color: #0d0d0d;
+}
+
+h2 {
+  font-size: var(--font-extra-large);
+}
+
+section {
+  margin: 25px 0;
+}
+
+a {
+  font-size: var(--font-small);
+  text-decoration: none;
+  color: #9999ff;
+}
+
+a:visited {
+  color: #ff66ff;
+}
+
+.section-experience {
+  display: flex;
+  margin: 50px 0;
+}
+
+.section-date {
+  min-width: 180px;
+  padding: 0 10px 10px 0;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #121212;
+  position: relative;
+  max-width: var(--width);
+  margin: 0 auto;
+  padding: 0 20px;
+  border-left: 2px solid #1a1a1a;
+  border-right: 2px solid #1a1a1a;
+}
+
+.main-bg-1 {
+  background-image: url("assets/hacker_typing.jpg");
+  min-height: var(--bg-img-height);
+}
+
+.main-bg-2 {
+  background-image: url("assets/computer_desk6.jpg");
+  min-height: var(--bg-img-height);
+}
+
+.main-bg-3 {
+  background-image: url("assets/computer_desk.jpg");
+  min-height: var(--bg-img-height);
+}
+
+.parallax {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.profile-pic {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.profile-name {
+  text-align: right;
+}
+
+.subtext {
+  font-size: var(--font-small);
+}
+
+.project-screenshot {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.project-screenshot img {
+  height: 600px;
+}
+
+.btn-arrow {
+  transition: transform var(--skills-modal-transition-time);
+  transition-timing-function: ease-in-out;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-bottom: 3px;
+  transform: rotate(45deg);
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+}
+
+.skills input {
+  display: none;
+}
+
+.btn-skills {
+  z-index: 20;
+  position: fixed;
+  transition: top var(--skills-modal-transition-time);
+  top: 0;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-top: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #121212;
+}
+
+.btn-skills:hover {
+  cursor: pointer;
+}
+
+.skills-content {
+  z-index: 20;
+  position: fixed;
+  transition: top var(--skills-modal-transition-time);
+  padding: 20px;
+  box-sizing: border-box;
+  height: var(--skills-modal-height);
+  max-height: calc(100vh - 40px);
+  width: var(--width);
+  top: calc(0px - var(--skills-modal-height));
+  border: 2px solid white;
+  background-color: #121212;
+}
+
+.skills-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-content li {
+  display: inline-block;
+  padding: 0 4px;
+  font-size: var(--font-small);
+}
+
+.skills-content li::before {
+  content: "- ";
+}
+
+.skills input:checked ~ .skills-content {
+  transition: top var(--skills-modal-transition-time);
+  transition-timing-function: ease-in-out;
+  top: 0;
+}
+
+.skills input:checked ~ .btn-skills {
+  transition: top var(--skills-modal-transition-time);
+  transition-timing-function: ease-in-out;
+  top: calc(var(--skills-modal-height));
+}
+
+.skills input:checked + .btn-skills .btn-arrow {
+  transition: transform var(--skills-modal-transition-time);
+  transition-timing-function: ease-in-out;
+  transform: rotate(-135deg);
+}
+
+.skills input:checked + .btn-skills .skills-bg {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  opacity: 80%;
+}
+
+@media screen and (max-width: 800px) {
+  :root {
+    --width: 100%;
+    --font-large: 18px;
+    --font-small: 14px;
+  }
+
+  .profile-pic {
+    width: 100px;
+  }
+
+  .profile-pic img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .section-experience {
+    flex-direction: column;
+  }
+
+  .skills-content {
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* mobile and tablet have a hard time with parallax, so set the bg attachement to scroll */
+  .parallax {
+    background-attachment: scroll;
+  }
+}
