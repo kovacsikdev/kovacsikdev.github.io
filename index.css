@@ -18,7 +18,7 @@ body {
   font-size: var(--font-large);
   font-family: Helvetica, Georgia, Times, "Times New Roman", sans-serif;
   color: white;
-  background-color: #000;
+  background-color: #0b0e0f;
 }
 
 h2 {
@@ -30,7 +30,7 @@ section {
 }
 
 section:nth-child(odd) {
-  background-color: #000;
+  background-color: #0b0e0f;
   border-top: 1px solid  #2c363a;
   border-bottom: 1px solid #2c363a;
 }
