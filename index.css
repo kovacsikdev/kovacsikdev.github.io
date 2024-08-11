@@ -18,7 +18,7 @@ body {
   font-size: var(--font-large);
   font-family: Helvetica, Georgia, Times, "Times New Roman", sans-serif;
   color: white;
-  background-color: #00001a;
+  background-color: #000;
 }
 
 h2 {
@@ -26,7 +26,13 @@ h2 {
 }
 
 section {
-  margin: 25px 0;
+  padding: 20px;
+}
+
+section:nth-child(odd) {
+  background-color: #000;
+  border-top: 1px solid  #fff;
+  border-bottom: 1px solid #fff;
 }
 
 a {
@@ -53,36 +59,10 @@ a:visited {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #121212;
+  background-color: #161b1d;
   position: relative;
   max-width: var(--width);
   margin: 0 auto;
-  padding: 0 20px;
-  border-left: 2px solid #1a1a1a;
-  border-right: 2px solid #1a1a1a;
-}
-
-.main-bg-1 {
-  background-image: url("assets/hacker_typing.jpg");
-  min-height: var(--bg-img-height);
-}
-
-.main-bg-2 {
-  background-image: url("assets/computer_desk6.jpg");
-  min-height: var(--bg-img-height);
-}
-
-.main-bg-3 {
-  background-image: url("assets/computer_desk.jpg");
-  min-height: var(--bg-img-height);
-}
-
-.parallax {
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .about {
