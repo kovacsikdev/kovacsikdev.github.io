@@ -52,13 +52,14 @@
               <p>
                 Working as a Software Developer Consultant for Walmart as a Web
                 Developer on the international team to build a next generation
-                Point Of Sale system for Walmart Canada.
+                Point Of Sale system for Walmart Canada built in React JS.
               </p>
               <p>
-                I focus on the Front End using React and TypeScript, but I also
-                help implement backend APIs and maintain communication between
-                the web app and the physical devices cashiers use such as hand
-                scanners.
+                I focus on the Front End using React and Typescript for the user
+                interaction. I use Redux for global cart and store configuration
+                state management. I help implement backend APIs and maintain
+                communication between the web app and the physical devices
+                cashiers use such as hand scanners.
               </p>
               <p>
                 I work with multiple teams and have implemented high end
@@ -141,22 +142,47 @@
         <div class="projects">
           <strong>Real time map</strong>
           <p class="subtext">
-            Web app displaying real time data of vehicle location and status on Google Maps.
-            I implemented 20 bots to accurately simulate multiple vehicles in the real world updating their location and vehicle status.
-            The bots individually stream their data to my server, which in turn streams vehicle updates to any connected clients.
-            All data streaming utilizes Web Sockets.
-            The overall architecure of what I did can be found in the web app.
+            Web app displaying real time data of vehicle location and status on
+            Google Maps. I implemented 20 bots to accurately simulate multiple
+            vehicles in the real world updating their location and vehicle
+            status. The bots individually stream their data to my server, which
+            in turn streams vehicle updates to any connected clients. All data
+            streaming utilizes Web Sockets. The overall architecure of what I
+            did can be found in the web app.
+          </p>
+          <p class="subtext">
+            Features:
+            <ul class="subtext">
+              <li>Display all 20 bots simultaneously updating their location in a frictionless manner</li>
+              <li>Sortable list of all connected bots</li>
+              <li>Selecting a vehicle will
+                <ul>
+                  <li>Zoom in to and follow the vehicle if it is not broken down at that moment</li>
+                  <li>Display current engine status</li>
+                  <li>Individually display tire pressure with an animated chart made in d3.js</li>
+                  <li>Display a fully 3D vehicle showing the status of all health indicators made in three.js</li>
+                </ul>
+              </li>
+            </ul>
           </p>
           <p>
-            <a href="https://kovacsikdev.github.io/real-time-map-dist/" target="_blank"
+            <a
+              href="https://kovacsikdev.github.io/real-time-map-dist/"
+              target="_blank"
               >https://kovacsikdev.github.io/real-time-map-dist/</a
             >
           </p>
           <div class="project-screenshot">
-            <img src="assets/real_time_map_2.png" alt="Real time map screenshot" />
+            <img
+              src="assets/real_time_map_2.png"
+              alt="Real time map screenshot"
+            />
           </div>
           <div class="project-screenshot">
-            <img src="assets/real_time_map_1.png" alt="Real time map screenshot" />
+            <img
+              src="assets/real_time_map_1.png"
+              alt="Real time map screenshot"
+            />
           </div>
         </div>
       </section>
