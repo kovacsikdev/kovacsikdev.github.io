@@ -29,7 +29,7 @@ section {
   padding: 20px;
 }
 
-section:nth-child(odd) {
+section:nth-child(even) {
   background-color: #0b0e0f;
   border-top: 1px solid  #2c363a;
   border-bottom: 1px solid #2c363a;
@@ -62,14 +62,13 @@ a:visited {
   background-color: #161b1d;
   position: relative;
   max-width: var(--width);
-  margin: 0 auto;
+  margin: 80px auto 0 auto;
 }
 
 .about {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 80px;
 }
 
 .profile-pic {
@@ -77,11 +76,12 @@ a:visited {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 
 .profile-pic img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
 }
 
