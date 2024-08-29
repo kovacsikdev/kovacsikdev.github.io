@@ -215,11 +215,8 @@ a:visited {
   .skills-content {
     height: 50vh;
   }
-}
 
-@media screen and (max-width: 800px) {
-  /* mobile and tablet have a hard time with parallax, so set the bg attachement to scroll */
-  .parallax {
-    background-attachment: scroll;
+  .skills input:checked ~ .btn-skills {
+    top: 50vh;
   }
 }
