@@ -12,8 +12,94 @@
     <!--
       Hello! Taking a look at the HTML structure?
       It is as bare bones as I could make it.
-      Notice how the Skills button toggle my list of skills without any JavaScript?
+      Notice how all of the interactions are done without any JavaScript?
+      The Skills toggle button, accordions, and project screenshot scroll snapping
+      are all done with HTML and CSS 
     -->
+    <div class="skills">
+      <input type="checkbox" id="btn-input" />
+      <label class="btn-skills" for="btn-input">
+        Skills <i class="btn-arrow"></i>
+        <div class="skills-bg"></div>
+      </label>
+      <div class="skills-content">
+        <div class="skills-lists">
+          <div>
+            Frontend <br />
+            Development
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SASS</li>
+              <li>Javascript</li>
+              <li>Typescript</li>
+              <li>Redux</li>
+              <li>React JS</li>
+              <li>React Native</li>
+              <li>React Testing Library</li>
+              <li>Jest</li>
+              <li>d3.js animated charts</li>
+              <li>three.js 3d models</li>
+            </ul>
+          </div>
+          <div>
+            Backend <br />
+            Development
+            <ul>
+              <li>Node JS</li>
+              <li>REST APIs</li>
+              <li>Web sockets</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="skills-lists">
+          <div>
+            AWS
+            <ul>
+              <li>EC2</li>
+              <li>S3 buckets</li>
+              <li>CloudFront</li>
+              <li>Route 53</li>
+              <li>Certificate Manager</li>
+            </ul>
+          </div>
+          <div>
+            CI/CD <br />
+            development
+            <ul>
+              <li>git</li>
+              <li>GitHub</li>
+              <li>Github Actions</li>
+              <li>Jenkins</li>
+              <li>Agile methodology</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="skills-lists">
+          <div>
+            Documentation
+            <ul>
+              <li>Jira</li>
+              <li>Confluence</li>
+              <li>JS Docs</li>
+            </ul>
+          </div>
+          <div>
+            Soft Skills
+            <ul>
+              <li>Communicates with multiple teams</li>
+              <li>Writes detailed code reviews</li>
+              <li>Writes detailed pull requests</li>
+              <li>Easy to get along with</li>
+              <li>Eager to help and mentor</li>
+              <li>Always learning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="main">
       <section class="about">
         <div class="profile-pic">
@@ -30,11 +116,17 @@
       </section>
       <section>
         <h2>About</h2>
-        <div>
+        <p>
           Fullstack Developer with over 7 years of experience. I mainly focus on
-          Frontend development as a React Developer. I enjoy building tools
-          and apps. I am always learning new things and growing as a developer.
-        </div>
+          Frontend development as a React Developer using TypeScript. I enjoy
+          building tools and apps. I am always learning new things and growing
+          as a developer.
+        </p>
+        <p>
+          I work with multiple teams in multiple departments including QA
+          testers, designers, product owners, business, etc. I mentor and train
+          new new hires and junior developers.
+        </p>
       </section>
       <section>
         <h2>Experience</h2>
@@ -50,37 +142,53 @@
             </div>
             <div class="subtext">
               <p>
-                Currently working for Kitestring contracted out to Walmart building a next gen Point of Sale system 
-                for associates in Canada.
+                Currently working for Kitestring contracted out to Walmart
+                building a next gen Point of Sale system for associates in
+                Canada.
               </p>
               <p>
-                Utilizing React and Redux, we are building a user interface to make it easy for associates to 
-                ring up customers. We are simplifying the complex features a Point of Sale system can offer. 
-                I build complicated features by implementing designs, API endpoints (some with GET requests, some with 
-                POST requests with payloads), user interaction flows, and handling edge cases.
+                Utilizing React and Redux, we are building a UI application to
+                make it easy for associates to ring up customers. The app is
+                currently being used on many registers and we are continuously
+                adding more features and fixing bugs.
               </p>
               <p>
-                Our app is currently on 600 registers and growing with a 98% transaction success rate.
+                We are simplifying the complex features a Point of Sale system
+                can offer. I build complex features by integrating designs, API
+                endpoints (some with GET requests, some with POST requests with
+                payloads), user interaction flows, and handling edge cases.
               </p>
               <p>
-                I personally implemented our most complicated and largest feature which is the gift cards. 
-                This involves purchasing, reloading, and using a gift card as a payment option.
+                I focus mainly on the Frontend using React, Redux, and
+                TypeScript. I help implement Backend API communication and the
+                communication between the application and the physical devices
+                used by associates such as the cash drawer, hand scanners, and
+                the pin pad.
               </p>
               <p>
-                I focus mainly on the Frontend using React, Redux, and TypeScript. I also help implement backend API
-                communication and the communication between the application and the physical devices used by associates
-                such as the cash drawer, hand scanners, and the pin pad.
+                I work with multiple teams including Frontend developers,
+                Backend developers, Product Owners, Designers, QA testers,
+                Payment systems, Business, and sometimes Walmart Associates
+                directly.
               </p>
               <p>
-                I work with multiple teams including Frontend developers, Backend developers, Product Owners, Designers,
-                QA testers, Payment systems, Business, and sometimes Walmart Associates directly.
+                I write up detailed documentation on the flows and other
+                developer notes (including screenshots) for both business and
+                developers in Confluence.
               </p>
               <p>
-                I write up detailed documentation on the flows and other developer notes (including screenshots) for both
-                business and developers in Confluence.
+                I have trained, on-boarded and mentored multiple developers
+                including junior developers.
               </p>
               <p>
-                I have trained, on-boarded and mentored multiple developers including junior developers.
+                <details>
+                  <summary>Career highlight</summary>
+                  <p>
+                    Built multiple features and streamlined existing features
+                    for our Point of Sale UI which is currently on over 600
+                    active registers in Walmart stores
+                  </p>
+                </details>
               </p>
             </div>
           </div>
@@ -97,21 +205,30 @@
             </div>
             <div class="subtext">
               <p>
-                Worked as a Web Developer to build and maintain web app products
-                for multiple clients worldwide in 50+ languages. Worked in a
-                modern development process alongside other developers,
-                designers, and product managers in the Agile methodology.
+                Worked as a Web Developer for a car rental company developing
+                widgets that can be easily integrating into existing websites
+                for customers. Our biggest customers were airlines. The widget
+                is seen and interacted with by thousands of people world wide,
+                but mostly in Europe. As it is world wide, the widget supports
+                over 50 languages and the styling is configurable according to
+                the customer's preference or company branding.
               </p>
               <p>
-                Developed custom libraries and components in a React JS
-                monorepo. Wrote 100% code coverage unit tests via Jest. Used Git
-                and Jenkins pipeline for continuous development and integration.
-                Documented processes and instructions in Confluence and Jira.
+                I developed custom libraries and components in a React JS
+                monorepo. I wrote 100% code coverage unit tests via Jest. I used
+                Git and Jenkins pipeline for continuous development and
+                integration. I documented processes and instructions in
+                Confluence and Jira.
               </p>
               <p>
-                <strong>Career highlight:</strong> Personally enchanced the
-                quality of our code reviews by dramatically improving our
-                documentation for our pull requests.
+                <details>
+                  <summary>Career highlight</summary>
+                  <p>
+                    I personally enhanced the quality of our code reviews by
+                    dramatically improving our documentation for our pull
+                    requests.
+                  </p>
+                </details>
               </p>
             </div>
           </div>
@@ -141,10 +258,23 @@
             </div>
             <div class="subtext">
               <p>
-                Worked as a Web Developer to build web apps and dashboards for
-                data analytics and projections using Vue JS. While maintaining
-                dashboards, I worked with a team of developers to build a mobile
-                cash transfer app.
+                Worked as a Web Developer for the BBVA bank. I built web apps
+                and dashboards for data analytics and projections using Vue JS.
+                The dashbaords were viewed and utilized by internal teams to
+                help make business decisions.
+              </p>
+              <p>
+                While maintaining dashboards, I worked with a team of developers
+                to build a mobile cash transfer app.
+              </p>
+              <p>
+                <details>
+                  <summary>Career highlight</summary>
+                  <p>
+                    I developed an analytics dashboard as a solo developer
+                    working directly with our CFO.
+                  </p>
+                </details>
               </p>
             </div>
           </div>
@@ -155,28 +285,40 @@
         <div class="projects">
           <strong>Real time map</strong>
           <p class="subtext">
-            Web app (React js) displaying real time data of vehicle location and status on
-            Google Maps. I implemented 20 bots to accurately simulate multiple
-            vehicles in the real world updating their location and vehicle
-            status. The bots individually stream their data to my custom server (Node js), which
-            in turn streams vehicle updates to any connected clients. All data
-            streaming utilizes Web Sockets. The overall architecure of what I
-            did can be found in the web app.
+            Web app (React js) displaying real time data of vehicle location and
+            status on Google Maps. I implemented 20 bots to accurately simulate
+            multiple vehicles in the real world updating their location and
+            vehicle status. The bots individually stream their data to my custom
+            server (Node js), which in turn streams vehicle updates to any
+            connected clients. All data streaming utilizes Web Sockets. The
+            overall architecure of what I did can be found in the web app.
           </p>
           <p class="subtext">
-            Features:
-            <ul class="subtext">
-              <li>Display all 20 bots simultaneously updating their location in a frictionless manner</li>
-              <li>Sortable list of all connected bots</li>
-              <li>Selecting a vehicle will:
-                <ul>
-                  <li>Zoom in to and follow the vehicle</li>
-                  <li>Display current engine status</li>
-                  <li>Individually display tire pressure with an animated chart made in d3.js</li>
-                  <li>Display a simplified, fully 3D vehicle showing the status of all health indicators made in three.js</li>
-                </ul>
-              </li>
-            </ul>
+            <details>
+              <summary>Features:</summary>
+              <ul class="subtext">
+                <li>
+                  Display all 20 bots simultaneously updating their location in
+                  a frictionless manner
+                </li>
+                <li>Sortable list of all connected bots</li>
+                <li>
+                  Selecting a vehicle will:
+                  <ul>
+                    <li>Zoom in to and follow the vehicle</li>
+                    <li>Display current engine status</li>
+                    <li>
+                      Individually display tire pressure with an animated chart
+                      made in d3.js
+                    </li>
+                    <li>
+                      Display a simplified, fully 3D vehicle showing the status
+                      of all health indicators made in three.js
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </details>
           </p>
           <p>
             <a
@@ -185,13 +327,11 @@
               >https://kovacsikdev.github.io/real-time-map-dist/</a
             >
           </p>
-          <div class="project-screenshot">
+          <div class="screenshot-wrapper">
             <img
               src="assets/real_time_map_2.png"
               alt="Real time map screenshot"
             />
-          </div>
-          <div class="project-screenshot">
             <img
               src="assets/real_time_map_1.png"
               alt="Real time map screenshot"
@@ -215,91 +355,6 @@
           <a href="https://github.com/kovacsikdev/">Github</a>
         </div>
       </section>
-      <div class="skills">
-        <input type="checkbox" id="btn-input" />
-        <label class="btn-skills" for="btn-input">
-          Skills <i class="btn-arrow"></i>
-          <div class="skills-bg"></div>
-        </label>
-        <div class="skills-content">
-          <div class="skills-lists">
-            <div>
-              Frontend <br />
-              Development
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>SASS</li>
-                <li>Javascript</li>
-                <li>Typescript</li>
-                <li>Redux</li>
-                <li>React JS</li>
-                <li>React Native</li>
-                <li>React Testing Library</li>
-                <li>Jest</li>
-                <li>d3.js animated charts</li>
-                <li>three.js 3d models</li>
-              </ul>
-            </div>
-            <div>
-              Backend <br />
-              Development
-              <ul>
-                <li>Node JS</li>
-                <li>REST APIs</li>
-                <li>Web sockets</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="skills-lists">
-            <div>
-              AWS
-              <ul>
-                <li>EC2</li>
-                <li>S3 buckets</li>
-                <li>CloudFront</li>
-                <li>Route 53</li>
-                <li>Certificate Manager</li>
-              </ul>
-            </div>
-            <div>
-              CI/CD <br />
-              development
-              <ul>
-                <li>git</li>
-                <li>GitHub</li>
-                <li>Github Actions</li>
-                <li>Jenkins</li>
-                <li>Agile methodology</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="skills-lists">
-            <div>
-              Documentation
-              <ul>
-                <li>Jira</li>
-                <li>Confluence</li>
-                <li>JS Docs</li>
-              </ul>
-            </div>
-            <div>
-              Soft Skills
-              <ul>
-                <li>Communicates with multiple teams</li>
-                <li>Writes detailed code reviews</li>
-                <li>Writes detailed pull requests</li>
-                <li>Easy to get along with</li>
-                <li>Eager to help and mentor</li>
-                <li>Always learning</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-      </div>
     </div>
   </body>
 </html>
