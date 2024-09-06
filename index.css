@@ -5,7 +5,6 @@
   --font-small: 16px;
   --skills-modal-height: 500px;
   --skills-modal-transition-time: 0.5s;
-  --bg-img-height: 300px;
 }
 
 html,
@@ -104,10 +103,24 @@ summary:hover {
   display: flex;
 }
 
-.screenshot-wrapper img {
-  width: calc(100% - 16px);
-  padding: 0 8px;
+.screenshot-img {
+  min-width: calc(100% - 16px);
+  padding: 8px;
   scroll-snap-align: center;
+  position: relative;
+}
+
+.screenshot-counter {
+  background-color: #161b1d;
+  border-radius: 8px;
+  padding: 8px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.screenshot-img img {
+  width: 100%;
 }
 
 .btn-arrow {
