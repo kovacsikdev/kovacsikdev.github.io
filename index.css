@@ -272,6 +272,61 @@ summary:hover {
   border-radius: 8px;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.gallery figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery figure:hover img {
+  transform: scale(1.1);
+}
+
+.gallery figcaption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery figure:hover figcaption {
+  opacity: 1;
+}
+
+.gallery figcaption p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.gallery figcaption a {
+  color: #ff7f50;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.gallery figcaption a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 800px) {
   :root {
     --width: 100%;
