@@ -4,406 +4,459 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
     <link rel="shortcut icon" type="image/ico" href="assets/favicon.ico" />
     <link rel="stylesheet" href="index.css" />
     <title>Michael Kovacsik</title>
   </head>
   <body>
-    <div class="background-vid">
-      <video autoplay muted loop>
-        <source src="assets/keyboard-typing.mp4" type="video/mp4" />
-      </video>
+    <div class="header">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="list list-left">
+        <ul>
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#side-projects">Side Projects</a></li>
+          <li>
+            <a href="#professional-experience">Professional Experience</a>
+          </li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#socials">Socials</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="header-name">
+          Michael <br />
+          Kovacsik
+        </div>
+        <div class="header-profession opacity">Frontend Engineer</div>
+      </div>
     </div>
-    <div class="skills">
-      <input type="checkbox" id="btn-input" />
-      <label class="btn-skills" for="btn-input">
-        Skills <i class="btn-arrow"></i>
-        <div class="skills-bg"></div>
-      </label>
-      <div class="skills-content">
-        <div class="skills-lists">
+    <div class="main">
+      <div id="summary" class="card">
+        <h1>Summary</h1>
+        <div class="opacity">
           <div>
-            <h3>Frontend Development</h3>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>SASS</li>
-              <li>Javascript</li>
-              <li>Typescript</li>
-              <li>Redux</li>
-              <li>React JS</li>
-              <li>React Native</li>
-              <li>React Testing Library</li>
-              <li>Jest</li>
-              <li>Chart.js</li>
-              <li>three.js 3d models</li>
-            </ul>
+            Frontend Software Engineer with over 7 years of experience
+            specializing in building scalable web applications using modern
+            JavaScript frameworks like React and Typescript. Adept at creating
+            reusable components and integrating REST APIs and Websockets.
           </div>
-          <div>
-            <h3>Backend Development</h3>
+          <div class="list">
             <ul>
-              <li>Node JS</li>
-              <li>REST APIs</li>
-              <li>Web sockets</li>
-              <li>AWS</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="skills-lists">
-          <div>
-            <h3>AWS</h3>
-            <ul>
-              <li>EC2</li>
-              <li>S3 buckets</li>
-              <li>CloudFront</li>
-              <li>Route 53</li>
-              <li>Certificate Manager</li>
-            </ul>
-          </div>
-          <div>
-            <h3>CI/CD Development</h3>
-            <ul>
-              <li>git</li>
-              <li>GitHub</li>
-              <li>Github Actions</li>
-              <li>Jenkins</li>
-              <li>Agile methodology</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="skills-lists">
-          <div>
-            <h3>Documentation</h3>
-            <ul>
-              <li>Jira</li>
-              <li>Confluence</li>
-              <li>JS Docs</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Soft Skills</h3>
-            <ul>
-              <li>Communicates with multiple teams</li>
-              <li>Writes detailed code reviews</li>
-              <li>Writes detailed pull requests</li>
-              <li>Easy to get along with</li>
-              <li>Eager to help and mentor</li>
-              <li>Always learning</li>
+              <li>
+                <strong>Frontend:</strong> HTML5, CSS3, SCSS, JavaScript, SolidJS, React,
+                Redux, Context, TypeScript, Chart.js, Three.js
+              </li>
+              <li>
+                <strong>Backend:</strong> Node.js, Express, REST APIs,
+                Websockets, SSE
+              </li>
+              <li>
+                <strong>Tools:</strong> Git, Jest, React Testing Library, AWS
+              </li>
+              <li>
+                <strong>Tools AI:</strong> GitHub Copilot, ChatGPT, Agent
+                prompting
+              </li>
+              <li>
+                <strong>Soft Skills:</strong> Agile methodology, Jira,
+                Confluence, mentoring, team collaboration
+              </li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
-    <div class="main">
-      <section class="about" style="background: none">
-        <div class="profile-pic">
-          <img src="assets/ai_avatar.jpg" alt="profile pic" />
-          <div class="subtext" style="margin-top: 8px">
-            AI profile pic generated by
-            <a href="https://prisma-ai.com/lensa" target="_blank">Lensa AI</a>
+      <div id="side-projects" class="card">
+        <h1>Side Projects</h1>
+        <div class="project-wrapper">
+          <div class="project-description opacity">
+            <h2>Military real-time map</h2>
+            <p>
+              Real time map designed to provide the latest information about the
+              current state of the battlefield
+            </p>
+            <div class="list">
+              <ul>
+                <li>
+                  Frontend: React, Typescript, Context (state management), CSS3,
+                  Three.js, Mapbox, Turf
+                </li>
+                <li>Backend: Node.js, Express, Server Side Events</li>
+              </ul>
+            </div>
+            <div>
+              <a
+                href="https://kovacsikdev.github.io/military-real-time-map/"
+                target="_blank"
+                >Visit site
+                <img
+                  loading="lazy"
+                  src="assets/external-link-icon.svg"
+                  alt="Opens in new tab"
+                  class="external-link-icon"
+              /></a>
+            </div>
+          </div>
+          <div class="project-screenshot">
+            <img loading="lazy" src="assets/military-real-time-map.png" />
           </div>
         </div>
-        <div class="profile-name">
-          <h2>Michael Kovacsik</h2>
-          <div>Fullstack Developer</div>
+        <div class="project-wrapper">
+          <div class="project-description opacity">
+            <h2>Mini onboarding</h2>
+            <p>
+              Mini onboarding application to showcase a smooth flow of
+              transitioning between form pages in a minimalist way
+            </p>
+            <div class="list">
+              <ul>
+                <li>Frontend: React, Typescript, CSS3</li>
+              </ul>
+            </div>
+            <div>
+              <a
+                href="https://kovacsikdev.github.io/onboarding/"
+                target="_blank"
+                >Visit site
+                <img
+                  loading="lazy"
+                  src="assets/external-link-icon.svg"
+                  alt="Opens in new tab"
+                  class="external-link-icon"
+              /></a>
+            </div>
+          </div>
+          <div class="project-screenshot">
+            <img loading="lazy" src="assets/onboarding.png" />
+          </div>
         </div>
-      </section>
-      <section role="region" aria-labelledby="about-heading">
-        <h2 id="about-heading">About</h2>
-        <p>
-          Detail-oriented Fullstack Developer with over 7 years of experience,
-          specializing in Frontend development using React and TypeScript.
-          Proficient in creating user-friendly tools and applications, with a
-          strong emphasis on writing thorough code reviews, pull requests, and
-          documentation. Known for being collaborative and my ability to
-          effectively train and mentor junior developers. Committed to
-          continuous learning, I stay current with recent technologies to ensure
-          ongoing professional growth.
-        </p>
-        <p>
-          I custom made this portfolio website without any JavaScript. This is
-          to show how user interactions can happen with plain HTML and CSS. Just
-          for the fun of it.
-        </p>
-        <p style="font-size: 1rem">
-          Download resume as PDF
-          <a
-            href="/assets/Resume-Michael-Kovacsik.pdf"
-            download="Resume-Michael-Kovacsik"
-            >here</a
-          >
-        </p>
-        <p style="font-size: 0.75rem">
-          Background video by
-          <a
-            href="https://pixabay.com/users/blackmarketmusic-2976878/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=136283"
-            target="_blank"
-            >3 6</a
-          >
-          from
-          <a
-            href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=136283"
-            target="_blank"
-            >Pixabay</a
-          >
-        </p>
-      </section>
-      <section id="side-projects" role="region" aria-labelledby="side-project-heading">
-        <h2 id="side-project-heading">Side Projects</h2>
-        <p>A collection of side projects <a href="https://kovacsikdev.github.io/portfolio/" target="_blank">here</a></p>
-        <div class="gallery">
-          <figure>
-            <img src="assets/military-real-time-map.png" alt="Military Real time map screenshot" loading="lazy" />
-            <figcaption>
-              <p>A real time map displaying current state of a battlefield</p>
-              <a href="https://kovacsikdev.github.io/military-real-time-map/" target="_blank">visit site</a>
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="assets/jumbotron.png" alt="Jumbotron screenshot" loading="lazy" />
-            <figcaption>
-              <p>Control center to update a jumbotron in real-time</p>
-              <a href="https://kovacsikdev.github.io/jumbotron/" target="_blank">visit site</a>
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="assets/warehouse-logistics.png" alt="Videos screenshot" loading="lazy" />
-            <figcaption>
-              <p>Dashboard displaying logistics for a warehouse. Download filterable data as CSV</p>
-              <a href="https://kovacsikdev.github.io/warehouse-logistics/" target="_blank">visit site</a>
-            </figcaption>
-          </figure>
+        <div class="project-wrapper">
+          <div class="project-description opacity">
+            <h2>Jumbotron</h2>
+            <p>
+              Control center to update a football game state and video display
+              of a jumbotron in real-time
+            </p>
+            <div class="list">
+              <ul>
+                <li>Frontend: React, Typescript, Tailwind</li>
+                <li>Backend: Node.js, Express, Websockets, video streaming</li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://kovacsikdev.github.io/jumbotron/" target="_blank"
+                >Visit site
+                <img
+                  loading="lazy"
+                  src="assets/external-link-icon.svg"
+                  alt="Opens in new tab"
+                  class="external-link-icon"
+              /></a>
+            </div>
+          </div>
+          <div class="project-screenshot">
+            <img loading="lazy" src="assets/jumbotron.png" />
+          </div>
         </div>
-      </section>
-      <section role="region" aria-labelledby="experience-heading">
-        <h2 id="experience-heading">Professional Experience</h2>
-        <div class="section-experience">
-          <div class="section-date subtext">Oct 2021 - Jan 2025</div>
+        <div class="project-wrapper">
+          <div class="project-description opacity">
+            <h2>Warehouse Logistics</h2>
+            <p>
+              Dashboard displaying logistics for a warehouse. Download
+              filterable data as CSV
+            </p>
+            <div class="list">
+              <ul>
+                <li>Frontend: React, Typescript, Apollo client</li>
+                <li>Backend: Node.js, Express, GraphQL, SQLite</li>
+              </ul>
+            </div>
+            <div>
+              <a
+                href="https://kovacsikdev.github.io/warehouse-logistics/"
+                target="_blank"
+                >Visit site
+                <img
+                  loading="lazy"
+                  src="assets/external-link-icon.svg"
+                  alt="Opens in new tab"
+                  class="external-link-icon"
+              /></a>
+            </div>
+          </div>
+          <div class="project-screenshot">
+            <img loading="lazy" src="assets/warehouse-logistics.png" />
+          </div>
+        </div>
+        <div class="project-wrapper">
+          <div class="project-description opacity">
+            <h2>Layman to corporate</h2>
+            <p>Convert simple language into corporate jargon effortlessly</p>
+            <div class="list">
+              <ul>
+                <li>Frontend: React, Typescript, Chakra UI</li>
+                <li>AI model implemented: gpt-4o-mini</li>
+              </ul>
+            </div>
+            <div>
+              <a
+                href="https://kovacsikdev.github.io/layman-corporate/"
+                target="_blank"
+                >Visit site
+                <img
+                  loading="lazy"
+                  src="assets/external-link-icon.svg"
+                  alt="Opens in new tab"
+                  class="external-link-icon"
+              /></a>
+            </div>
+          </div>
+          <div class="project-screenshot">
+            <img loading="lazy" src="assets/layman-corporate.png" />
+          </div>
+        </div>
+        <div class="project-wrapper">
+          <div class="project-description opacity">
+            <h2>Text chat</h2>
+            <p>A real-time chat application for seamless communication</p>
+            <div class="list">
+              <ul>
+                <li>Frontend: React, Typescript, Material UI</li>
+                <li>Backend: Node.js, Websockets</li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://kovacsikdev.github.io/text-chat/" target="_blank"
+                >Visit site
+                <img
+                  loading="lazy"
+                  src="assets/external-link-icon.svg"
+                  alt="Opens in new tab"
+                  class="external-link-icon"
+              /></a>
+            </div>
+          </div>
+          <div class="project-screenshot">
+            <img loading="lazy" src="assets/text-chat.png" />
+          </div>
+        </div>
+      </div>
+      <div id="professional-experience" class="card">
+        <h1>Professional Experience</h1>
+        <div class="experience-wrapper opacity">
+          <div style="text-align: center">
+            <div>
+              <a href="https://www.mastechdigital.com/" target="_blank"
+                >Mastech
+                <img
+                  loading="lazy"
+                  src="assets/external-link-icon.svg"
+                  alt="Opens in new tab"
+                  class="external-link-icon"
+              /></a>
+            </div>
+            <div>Jul 2025 - present</div>
+            <div class="experience-logo">
+              <img loading="lazy" src="https://www.amazon.com/favicon.ico" />
+            </div>
+          </div>
+          <p>Front End Engineer</p>
           <div>
-            <div><strong>Software Engineer</strong></div>
+            Contractor for Amazon on the Kuiper project as a Front End Engineer.
+            Kuiper is an upcoming low earth satellite internet service from
+            Amazon. I focus on the e-commerce side of the project
+          </div>
+          <div class="list">
+            <ul>
+              <li>Building reusable UI components in React</li>
+              <li>Utilizing React Context for shared state management</li>
+              <li>
+                Working with multiple teams to implement features and fix bugs
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience-wrapper opacity">
+          <div style="text-align: center">
             <div>
               <a href="https://www.kitestring.com/" target="_blank"
-                >Kitestring</a
-              >
-              <div class="subtext">Redmond, Washington, USA (100% remote)</div>
-            </div>
-            <div class="subtext">
-              <p style="color: lightsalmon">
-                <strong>Tech used:</strong> React, Redux, Typescript, Axios
-              </p>
-              <p>
-                Contractor for Walmart on the COSTL project as a Frontend
-                developer. COSTL is a next gen Point of Sale application to
-                streamline and replace the existing POS system. The SPA is
-                currently in production in multiple stores
-              </p>
-              <ul class="experience-details">
-                <li>Built reusable UI components in React and Typescript</li>
-                <li>Wrote and utilized Redux for global state management</li>
-                <li>Wrote complex code including custom React hooks</li>
-                <li>Utilized SCSS for component styling</li>
-                <li>Integrated Backend REST APIs</li>
-                <li>Wrote unit tests in Jest and React testing Library</li>
-                <li>Versioning, source code control and code reviews in git</li>
-                <li>
-                  Maintained communication between the UI and physical devices
-                  such as hand scanners and the pin pad
-                </li>
-                <li>
-                  Worked with multiple teams including other Frontend
-                  developers, Backend developers, product owners, designers, QA
-                  testers, payment systems, business and sometimes Walmart
-                  associates directly.
-                </li>
-                <li>
-                  Lead meetings, wrote Jira tickets, reached out for
-                  requirements/clarification from multiple departments, on-
-                  boarded new hires, mentored junior developers and provided
-                  help for others
-                </li>
-              </ul>
-              <p>
-                <details>
-                  <summary>Career highlight</summary>
-                  <p>
-                    I built multiple features and streamlined existing features
-                    for our Point of Sale app which is currently on over 1,000
-                    active registers in Walmart stores with 500,000 daily
-                    transactions.
-                  </p>
-                </details>
-              </p>
-            </div>
-            <div class="screenshot-wrapper">
-              <input
-                type="checkbox"
-                id="img-toggle-walmart-1"
-                class="img-toggle"
-              />
-              <label for="img-toggle-walmart-1" class="screenshot-img">
+                >Kitestring Technical Services
                 <img
-                  src="assets/costl_screenshot.png"
-                  alt="Costl screenshot"
                   loading="lazy"
-                />
-              </label>
-              <input
-                type="checkbox"
-                id="img-toggle-walmart-2"
-                class="img-toggle"
+                  src="assets/external-link-icon.svg"
+                  alt="Opens in new tab"
+                  class="external-link-icon"
+              /></a>
+            </div>
+            <div>Oct 2021 - Jan 2025</div>
+            <div class="experience-logo">
+              <img
+                loading="lazy"
+                src="https://i5.walmartimages.com/dfw/63fd9f59-14e2/9d304ce6-96de-4331-b8ec-c5191226d378/v1/spark-icon.svg"
               />
-              <label for="img-toggle-walmart-2" class="screenshot-img">
-                <img
-                  src="assets/costl_register.png"
-                  alt="Costl register"
-                  loading="lazy"
-                />
-              </label>
             </div>
           </div>
-        </div>
-        <div class="section-experience">
-          <div class="section-date subtext">May 2019 - May 2021</div>
+          <p>Software Engineer</p>
           <div>
-            <div><strong>Software Engineer</strong></div>
+            Contractor for Walmart on the COSTL project as a Frontend developer.
+            COSTL is an enterprise Point of Sale application to streamline and
+            replace the existing POS system. It is the software used by store
+            associates to process customer purchases, manage transactions, apply
+            discounts, and handle payments at checkout
+          </div>
+          <div class="list">
+            <ul>
+              <li>
+                Built reusable and scalable UI components in React and
+                TypeScript
+              </li>
+              <li>Wrote and utilized Redux for global state management</li>
+              <li>Integrated and maintained cart item management</li>
+              <li>
+                Integrated REST APIs and maintained communication between the UI
+                and physical devices like hand scanners
+              </li>
+              <li>Integrated multiple payment types</li>
+              <li>
+                Led cross functional meetings, wrote Jira tickets and mentored
+                junior developers
+              </li>
+              <li>
+                Worked with multiple teams including Design, Product, QA and
+                Backend
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience-wrapper opacity">
+          <div style="text-align: center">
             <div>
               <a href="https://corporate.cartrawler.com/en-gb/" target="_blank"
-                >CarTrawler</a
-              >
-              <div class="subtext">Dublin, Ireland</div>
-            </div>
-            <div class="subtext">
-              <p style="color: lightsalmon">
-                <strong>Tech used:</strong> React, Typescript, Axios
-              </p>
-              <p>
-                Frontend developer developing a car rental widget to be used in
-                airline and airport websites world wide
-              </p>
-              <ul class="experience-details">
-                <li>Built reusable components in React and Typescript</li>
-                <li>Integrated Backend REST APIs</li>
-                <li>Utilized SCSS for component styling</li>
-                <li>Utilized Contentful for client configs and theming</li>
-                <li>
-                  Wrote 100% code coverage unit tests in Jest and React Testing
-                  Library
-                </li>
-                <li>Versioning, source code control and code reviews in git</li>
-              </ul>
-              <p>
-                <details>
-                  <summary>Career highlight</summary>
-                  <p>
-                    I personally enhanced the quality of our code reviews by
-                    dramatically improving our documentation for our pull
-                    requests.
-                  </p>
-                </details>
-              </p>
-            </div>
-            <div class="screenshot-wrapper">
-              <input
-                type="checkbox"
-                id="img-toggle-cartrawler-1"
-                class="img-toggle"
-              />
-              <label for="img-toggle-cartrawler-1" class="screenshot-img">
+                >CarTrawler
                 <img
-                  src="assets/cartrawler_widget.png"
-                  alt="Cartrawler widget"
                   loading="lazy"
-                />
-              </label>
-              <input
-                type="checkbox"
-                id="img-toggle-cartrawler-2"
-                class="img-toggle"
+                  src="assets/external-link-icon.svg"
+                  alt="Opens in new tab"
+                  class="external-link-icon"
+              /></a>
+            </div>
+            <div>May 2019 - May 2021</div>
+            <div class="experience-logo">
+              <img
+                loading="lazy"
+                src="https://corporate.cartrawler.com/wp-content/uploads/2021/12/ct-logo-light.svg"
               />
-              <label for="img-toggle-cartrawler-2" class="screenshot-img">
+            </div>
+          </div>
+          <p>Software Engineer</p>
+          <div>
+            Frontend developer developing a car rental widget to be used in
+            airline and airport websites world wide
+          </div>
+          <div class="list">
+            <ul>
+              <li>
+                Built reusable and scalable UI components in React and
+                TypeScript
+              </li>
+              <li>Integrated Backend REST APIs</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience-wrapper opacity">
+          <div style="text-align: center">
+            <div>
+              <a href="https://www.bbva.com/en" target="_blank"
+                >BBVA
                 <img
-                  src="assets/cartrawler_search.png"
-                  alt="Cartrawler search"
                   loading="lazy"
-                />
-              </label>
+                  src="assets/external-link-icon.svg"
+                  alt="Opens in new tab"
+                  class="external-link-icon"
+              /></a>
+            </div>
+            <div>Aug 2016 - May 2018</div>
+            <div class="experience-logo">
+              <img
+                loading="lazy"
+                src="https://www.bbva.com/wp-content/themes/coronita-bbvacom/assets/images/comun/favicon.ico"
+              />
             </div>
           </div>
-        </div>
-        <div class="section-experience">
-          <div class="section-date subtext">May 2018 - May 2019</div>
+          <p>Software Developer I</p>
           <div>
-            <div><strong>Travel</strong></div>
-            <div>
-              <div class="subtext">Europe</div>
-            </div>
-            <div class="subtext">
-              <p>
-                Spent some time travelling Europe visiting Germany, France,
-                Denmark, United Kingdom and Ireland.
-              </p>
-            </div>
+            Fullstack developer building and maintaining every aspect of an
+            analytics dashboard while also working on a money transfer mobile
+            app between the US and Mexico
+          </div>
+          <div class="list">
+            <ul>
+              <li>Frontend built with HTML, CSS, Vue.js and Highcharts.js</li>
+              <li>Backend built with Node.js and Express</li>
+              <li>Database built with MongoDB</li>
+              <li>Authentication built with Passport.js and Auth0</li>
+              <li>Integrated multiple payment types</li>
+              <li>
+                Worked with stakeholders for business requirements such as the
+                Managing Directors and the CFO
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="section-experience">
-          <div class="section-date subtext">Aug 2016 - May 2018</div>
+      </div>
+      <div id="education" class="card">
+        <h1>Education</h1>
+        <div class="opacity" style="text-align: center">
           <div>
-            <div><strong>Software Developer I</strong></div>
-            <div>
-              <a href="https://www.bbva.com/en/" target="_blank">BBVA</a>
-              <div class="subtext">Dallas, Texas, USA</div>
-            </div>
-            <div class="subtext">
-              <p style="color: lightsalmon">
-                <strong>Tech used:</strong> Vue JS, Axios, Mongo DB, AWS
-              </p>
-              <p>
-                Fullstack developer building and maintaining every aspect of an
-                analytics dashboard while also working on a money transfer
-                mobile app between the US and Mexico.
-              </p>
-              <ul class="experience-details">
-                <li>Frontend built with HTML, CSS, Vue.js and Highcharts.js</li>
-                <li>Backend built with Node.js and Express</li>
-                <li>Database built with MongoDB</li>
-                <li>Authentication built with Passport.js and Auth0</li>
-                <li>
-                  Worked with stakeholders for business requirements such as the
-                  Managing Directors and the CFO
-                </li>
-              </ul>
-              <p>
-                <details>
-                  <summary>Career highlight</summary>
-                  <p>
-                    The dashboard I built was displayed in our office for high
-                    ranking business people including the CFO to view on a daily
-                    basis
-                  </p>
-                </details>
-              </p>
-            </div>
+            <a href="https://www.uat.edu/" target="_blank"
+              >University of Advancing Technology
+              <img
+                loading="lazy"
+                src="assets/external-link-icon.svg"
+                alt="Opens in new tab"
+                class="external-link-icon"
+            /></a>
+          </div>
+          <div>Bachelors degree in Multimedia</div>
+          <div class="education-logo">
+            <img
+              loading="lazy"
+              src="https://www.uat.edu/themes/uat/images/uat-logo.png"
+            />
           </div>
         </div>
-      </section>
-      <section role="region" aria-labelledby="socials-heading">
-        <h2 id="socials-heading">Socials</h2>
-        <div>
-          <a href="mailto:kovacsikdev@gmail.com">kovacsikdev@gmail.com</a>
+      </div>
+      <div id="socials" class="card">
+        <h1>Socials</h1>
+        <div class="list">
+          <ul>
+            <li>
+              <a href="mailto:kovacsikdev@gmail.com">kovacsikdev@gmail.com</a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/michael-kovacsik-46b30681/"
+                target="_blank"
+                >LinkedIn
+                <img
+                  loading="lazy"
+                  src="assets/external-link-icon.svg"
+                  alt="Opens in new tab"
+                  class="external-link-icon"
+              /></a>
+            </li>
+          </ul>
         </div>
-        <div>
-          <a
-            href="https://www.linkedin.com/in/michael-kovacsik-46b30681/"
-            target="_blank"
-            >LinkedIn</a
-          >
-        </div>
-        <div>
-          <a href="https://github.com/kovacsikdev/">Github</a>
-        </div>
-      </section>
+      </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
